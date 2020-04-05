@@ -23,6 +23,7 @@ body {
 
 nav {
   width: 100%;
+  margin: 0;
 }
 
 .firstbutton button {
@@ -46,6 +47,7 @@ nav {
   padding-left: 45px;
   width: 230px;
   cursor: pointer;
+  margin: 20pt;
 }
 
 /* #logo {
@@ -65,12 +67,14 @@ ul li {
 ul.topnav li a {
   text-decoration: none;
   font-family: "Ubuntu";
-  padding: 40px 50px 40px 7px;
+  padding: 10px 40px 10px 15px;
   line-height: 4;
   font-size: 20px;
   color: yellow;
   font-weight: 800;
+  margin: 0 20px 0 00px;
   border: white 5px;
+  border-radius: 50px;
 }
 
 .firstbutton button:hover {
@@ -78,18 +82,19 @@ ul.topnav li a {
   color: white;
 }
 
-ul.topnav li a:hover {
+ul.topnav a:hover {
   background-color: rgb(26, 26, 145);
   color: white;
 }
 
-ul.topnav li.dropdown {
+ul.topnav li.dropdown2 {
   display: none;
 }
 
 .topnav {
   text-transform: uppercase;
   text-decoration: none;
+  display: ;
 }
 
 .topnav li a {
@@ -112,11 +117,21 @@ ul.topnav li.dropdown {
   ul.topnav li:not(:nth-child(1)) {
     display: none;
   }
-  ul.topnav li.dropdown {
+
+  .firstbutton {
+    display: none;
+  }
+
+  i.fas {
+    display: none;
+  }
+
+  ul.topnav li.dropdown2 {
     display: block;
     float: right;
   }
-  ul.topnav.responsive {
+
+  /* ul.topnav.responsive {
     position: relative;
   }
 
@@ -128,5 +143,5 @@ ul.topnav li.dropdown {
   ul.topnav.responsive li a {
     display: block;
     text-align: left;
-  }
+  } */
 }
