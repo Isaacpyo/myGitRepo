@@ -1,3 +1,24 @@
+html {
+  margin: auto;
+  overflow: hidden;
+}
+
 body {
   margin: auto;
+}
+
+.headercolor {
+  background: #221e45;
+}
+
+.headersection {
+  background: #1d1a38;
+  display: block;
+}
+
+img#navlogoedit {
+  padding-left: 10px;
+  height: 30px;
+  padding: 15px 0 15px 35px;
+  box-shadow: black 10px;
 }
