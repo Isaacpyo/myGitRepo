@@ -1,24 +1,132 @@
-html {
-  margin: auto;
-  overflow: hidden;
-}
-
-body {
-  margin: auto;
-}
-
-.headercolor {
-  background: #221e45;
-}
-
-.headersection {
-  background: #1d1a38;
+nav,
+header,
+footer {
   display: block;
 }
 
-img#navlogoedit {
-  padding-left: 10px;
-  height: 30px;
-  padding: 15px 0 15px 35px;
-  box-shadow: black 10px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  font-family: "Thambi+2";
+}
+
+nav {
+  width: 100%;
+}
+
+.firstbutton button {
+  padding: 9px 20px;
+  background-color: yellow;
+  border: 10px yellow;
+  color: rgb(38, 18, 59);
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 65px;
+  margin: 20px 50px;
+  font-stretch: expanded;
+
+  cursor: pointer;
+  float: right;
+}
+
+.logo2 {
+  padding-left: 45px;
+  width: 230px;
+  cursor: pointer;
+}
+
+/* #logo {
+  background-repeat: no-repeat;
+  align-items: center;
+
+  background-image: url(../images/vector/default-monochrome.svg);
+} */
+
+ul li {
+  list-style: none;
+  display: inline;
+  /* align-content: center; */
+  padding: 18px;
+}
+
+ul.topnav li a {
+  text-decoration: none;
+  font-family: "Ubuntu";
+  padding: 40px 50px 40px 7px;
+  line-height: 4;
+  font-size: 20px;
+  color: yellow;
+  font-weight: 800;
+  border: white 5px;
+}
+
+.firstbutton button:hover {
+  background-color: rgb(26, 26, 145);
+  color: white;
+}
+
+ul.topnav li a:hover {
+  background-color: rgb(26, 26, 145);
+  color: white;
+}
+
+ul.topnav li.dropdown {
+  display: none;
+}
+
+.topnav {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.topnav li a {
+  transition: all 0.3s ease 0s;
+}
+
+.headerBackground {
+  background: #1b1c3f;
+  overflow: hidden;
+  margin: 0;
+  opacity: 1;
+}
+
+.textsection {
+  text-align: center;
+}
+
+/* mobile */
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  ul.topnav li.dropdown {
+    display: block;
+    float: right;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+
+  ul.topnav.resposive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
