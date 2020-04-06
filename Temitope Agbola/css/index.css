@@ -4,6 +4,41 @@ footer {
   display: block;
 }
 
+#bground1 {
+  background: black url(../images/cartoon3.jpg);
+  opacity: 1;
+  padding: 12.5em 0;
+  text-align: center;
+  height: 850px;
+  transition: padding 0.3s linear;
+  position: relative;
+  background-size: 100%;
+  overflow: hidden;
+}
+section h3 {
+  font-weight: 300;
+}
+.bground2text {
+  color: white;
+  line-height: 2;
+}
+
+.learn h3 {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.fa-arrow-alt-circle-down {
+  width: 50px;
+  height: 50px;
+}
+
+i.far {
+  color: yellow;
+  width: 50px;
+  height: 50px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,13 +61,17 @@ nav {
   margin: 0;
 }
 
-#back2 {
-  width: 100%;
-  height: 650px;
+section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-of-type(1) {
   background-image: url(../images/cartoon\3jpg);
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
 }
 
 .firstbutton button {
@@ -103,7 +142,6 @@ ul.topnav li.dropdown2 {
 .topnav {
   text-transform: uppercase;
   text-decoration: none;
-  display: ;
 }
 
 .topnav li a {
@@ -119,6 +157,56 @@ ul.topnav li.dropdown2 {
 
 .textsection {
   text-align: center;
+}
+
+.row22 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row22::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
 }
 
 /* mobile */
