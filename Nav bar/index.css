@@ -1,0 +1,451 @@
+/* #######Default##### */
+nav,
+header,
+footer {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+}
+
+label {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Ubuntu";
+  text-align: justify;
+}
+
+p {
+  font-family: "Ubuntu";
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+article p {
+  margin-top: 20%;
+  margin-left: 5%;
+  font-size: 27px;
+  padding: 30px;
+  padding-right: 50px;
+  line-height: 1.5;
+  color: white;
+}
+
+/* ####Nav bar####### */
+
+.firstslide {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.thirdslide {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.row22 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row22::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  background: linear-gradient(to left, #006699, #339966);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul.topnav li {
+  list-style: none;
+  float: left;
+
+  margin-left: 0px;
+}
+
+ul.topnav li.topright {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 18px;
+  text-align: center;
+  padding: 13px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+
+ul.topnav li a:hover {
+  background-color: rgb(26, 26, 145);
+  color: white;
+}
+
+ul.topnav li.dropdown {
+  display: none;
+}
+
+div.thirdslide {
+  background: linear-gradient(to left, #006699, #339966);
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ####custom  slides */
+
+#sectiononegrad {
+  background: linear-gradient(to right, #c1cfd4, #fff);
+  overflow: hidden;
+  /* background-image: url(unnamed.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  align-items: center; */
+}
+
+div.box3 {
+  background-color: rgba(244, 252, 252, 0.5);
+  margin: 24px;
+  padding: 36px 24px 38px 24px;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+div.imgslope img {
+  display: block;
+  margin: auto;
+  float: none;
+  margin-right: 80px;
+  box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, 0.25),
+    2px 2px 20px 2px rgba(0, 0, 0, 0.75);
+}
+
+div.icons {
+  width: 100%;
+}
+
+.leftslidecol {
+  margin-left: 18%;
+}
+
+.userbackground {
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  width: 350px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userbackground i {
+  padding: 15px;
+  flex: 1;
+  outline: none;
+}
+
+.userbackground input {
+  background: none;
+  border: none;
+}
+
+h1.section1stheader {
+  font-size: 50px;
+  margin-top: 5%;
+}
+h1.largetext {
+  font-family: "Ubuntu", "Baloo";
+  color: #083a53;
+  font-size: 90px;
+  padding-top: 25px;
+  margin: 0;
+  line-height: 40px;
+}
+
+h1.largetext1 {
+  font-family: "Ubuntu", "Baloo";
+  color: #083a53;
+  font-size: 70px;
+  padding-top: 25px;
+  margin: 0;
+  line-height: 40px;
+}
+
+h1.largetext2 {
+  color: #006da3;
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 25px;
+  margin: 0;
+  line-height: 70px;
+}
+
+h2.user {
+  font-family: "Lato";
+  font-size: 18px;
+}
+
+div.row22 button:hover {
+  background-color: green;
+  color: white;
+}
+
+button {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Lato";
+  color: white;
+  background-color: #006699;
+  padding: 15px 60px;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  margin: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.Signin {
+  display: block;
+  background: linear-gradient(to left, #006699, #339966);
+  margin-left: 164px;
+  margin-top: 30px;
+  font-size: 20px;
+  padding: 15px 40px;
+}
+
+div.learnmore {
+  margin-top: 30%;
+}
+
+button.learnmore {
+  display: block;
+  margin-top: 40px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+button.Viewoffers {
+  display: block;
+  margin: 50px 30px 155px 85px;
+  float: left;
+  background-color: azure;
+  color: #083a53;
+  border: 20px rgb(0, 0, 0);
+
+  padding-bottom: 20px;
+}
+
+div.leftsidecol {
+  margin-left: 25%;
+}
+
+div.rightsidecol {
+  margin: 1%;
+  padding-right: 20px;
+  border: 50px white;
+}
+
+h1.logotext {
+  color: gold;
+}
+
+.logokids {
+  color: white;
+  font-family: "ubuntu";
+  line-height: 1.5;
+}
+
+#imgedit {
+  height: 100%;
+  width: 100%;
+  border: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 6px;
+  margin-bottom: 105px;
+  margin-top: 100px;
+  margin-right: 30px;
+  box-shadow: 1px 1px 15px rgb(66, 66, 66);
+}
+/* .imgplaceholder {
+  border: #fff;
+  border: 10px;
+  
+} */
+
+input[type="text"] {
+  font-size: 14px;
+  width: 300px;
+  min-width: 100px;
+  padding: 5px;
+}
+
+h1.section1stheader {
+  font-size: 70px;
+  text-align: center;
+  font-family: "Ubuntu";
+}
+
+form h2 {
+  color: #083a53;
+}
+
+footer.footerclass {
+  background-color: black;
+  padding-left: 7%;
+}
+
+footer.footerclass ul {
+  list-style: none;
+  text-align: left;
+}
+
+footer.footerclass ul li {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer h1 {
+  font-family: "Ubuntu";
+  line-height: 1.2;
+  color: white;
+  font-size: 35px;
+}
+
+/* ####custom  slides */
+
+/* mobile */
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  ul.topnav li.dropdown {
+    display: block;
+    float: right;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+
+  ul.topnav.resposive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  article p {
+    font-size: 22px;
+  }
+
+  .col-6,
+  .col-4,
+  .col-12,
+  .col-7,
+  .col-5 {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  div.mobilestack {
+    width: 50%;
+    display: block;
+  }
+
+  div.box3 {
+    padding: 5px;
+  }
+
+  div.imgslope {
+    margin: 10px;
+  }
+
+  div.imgslope img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  div.leftsidecol,
+  div.rightsidecol {
+    margin: 30px;
+  }
+
+  div .Signin {
+    width: 30%;
+    align-items: center;
+  }
+
+  .imgconverter img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+}
