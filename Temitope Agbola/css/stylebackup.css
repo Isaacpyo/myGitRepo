@@ -347,3 +347,281 @@ ul {
     display: none;
   }
   */
+
+nav,
+header,
+footer {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#bground1 {
+  background: url(../images/cartoon3.jpg);
+  opacity: 1;
+  background-repeat: no-repeat;
+  padding: 12.5em 0;
+  text-align: center;
+  height: 900px;
+  transition: padding 0.3s linear;
+  position: relative;
+  background-size: 100%;
+  overflow: hidden;
+}
+section h3 {
+  font-weight: 300;
+}
+.bground2text {
+  color: white;
+  line-height: 2;
+}
+
+.fa-arrow-alt-circle-down {
+  width: 50px;
+  height: 50px;
+}
+
+i.far {
+  color: yellow;
+  width: 50px;
+  height: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  font-family: "Ubuntu";
+  color: red;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+}
+
+p.btn3 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-of-type(1) {
+  background-image: url(../images/cartoon\3jpg);
+}
+
+.firstbutton button {
+  padding: 9px 20px;
+  background-color: yellow;
+  border: 10px yellow;
+  color: rgb(38, 18, 59);
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 65px;
+  margin: 0px 0px;
+  font-stretch: expanded;
+
+  cursor: pointer;
+  float: right;
+}
+
+.logo2 {
+  padding-left: 45px;
+  width: 230px;
+  cursor: pointer;
+  margin: 20pt;
+}
+
+/* #logo {
+  background-repeat: no-repeat;
+  align-items: center;
+
+  background-image: url(../images/vector/default-monochrome.svg);
+} */
+
+ul li {
+  list-style: none;
+  display: inline;
+  /* align-content: center; */
+  padding: 18px;
+}
+
+ul.topnav li a {
+  text-decoration: none;
+  font-family: "Ubuntu";
+  padding: 10px 40px 10px 15px;
+  line-height: 4;
+  font-size: 20px;
+  color: yellow;
+  font-weight: 800;
+  margin: 0 0px 0 00px;
+  border: white 5px;
+  border-radius: 50px;
+}
+
+.firstbutton button:hover {
+  background-color: #1b1c3f;
+  color: #fffb00;
+}
+
+ul.topnav a:hover {
+  background-color: yellow;
+  color: #1b1c3f;
+}
+
+.btn {
+  font-weight: 600;
+  cursor: pointer;
+  color: #788487;
+  text-align: center;
+  float: left;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 1rem 1.875rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.1875rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.ndsection {
+  background-image: url(../images/middle.png);
+  background-repeat: no-repeat;
+  height: 1050px;
+  width: 100%;
+  transition: padding 0.3s linear;
+  overflow: hidden;
+}
+
+.btn-brand {
+  display: block;
+
+  padding: 10px;
+  font-size: 25px;
+  width: 30%;
+  margin: 0 90px;
+  color: #000000;
+  background-color: #ecfd50;
+  border-color: #000000;
+  border-radius: 1.875rem;
+}
+
+.btn2 {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+ul.topnav li.dropdown2 {
+  display: none;
+}
+
+.topnav {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.topnav li a {
+  transition: all 0.3s ease 0s;
+}
+
+.headerBackground {
+  background: #1b1c3f;
+  overflow: hidden;
+  margin: 0;
+  opacity: 1;
+}
+
+.textsection {
+  text-align: center;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* mobile */
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  .firstbutton {
+    display: none;
+  }
+
+  i.fas {
+    display: none;
+  }
+
+  ul.topnav li.dropdown2 {
+    display: block;
+    float: right;
+  }
+
+  div.bground2text h1 h2 h3 {
+    font-size: 1px;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  /* ul.topnav.responsive {
+    position: relative;
+  }
+
+  ul.topnav.resposive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  } */
+}
