@@ -30,32 +30,92 @@
     <title>Temtitope Agbola | Front End Developer & UI/UX Designer</title>
   </head>
   <body>
-    <header class="navbar navbar-expand bd-navbar">
-        <a href="www.temitopeagbola.com">
-          <img src="../images/vector/default-monochrome.svg" height="200" width="200"> 
-        </a>
-        <ul class="navbar-nav flex-row">
-          <li class="nav-item">
-            <i class="fas fa-home" style="color: yellow;"></i>
-            <a class="nav-link" href="#Home">Home</a>
-          </li>
-          <li>
-            <i class="fas fa-address-card" style="color: yellow;"></i>
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav3border">
-            <i class="fas fa-project-diagram" style="color: yellow;"></i>
-            <a class="nav-link" href="#about">Porfolio</a>
-          </li>
-        </ul>
-        <ul >
-          <li class="btn nav2">
-            <a href="Hire-me-index.html">
-              <button>Hire Temitope</button></a>
-          </li>
-        </ul>
-    </header
+    <header class="container navbar navbar-expand">
+      <a href="www.temitopeagbola.com">
+        <img
+          class="logoeffect"
+          src="../images/vector/default-monochrome.svg"
+          height="200"
+          width="200"
+        />
+      </a>
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item">
+          <i class="fas fa-home" style="color: yellow;"></i>
+          <a class="nav-link" href="#Home">Home</a>
+        </li>
+        <li>
+          <i class="fas fa-address-card" style="color: yellow;"></i>
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav3border dropdown show">
+          <i class="fas fa-project-diagram" style="color: yellow;"></i>
+          <a class="nav-link dropdown-toggle" href="#">Porfolio</a>
 
+          <div
+            class="dropdown-menu dropdown-menu-md-right"
+            aria-labelledby="bd-versions"
+          >
+            <a class="dropdown-item" href="#">Projects</a>
+            <a class="dropdown-item" href="#">Developer Tools</a>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="btn2 nav2">
+          <a href="Hire-me-index.html"> <button>Hire Temitope</button></a>
+        </li>
+      </ul>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <a style="color: yellow;" href="">&#9776;</a>
+      </label>
+    </header>
+
+    <section class="module-cover parallax text-center fullscreen" data-background="../images/cartoon3.jpg" data-overlay="0.7" style="background-image: url(../images/cartoon3.jpg); z-index: 0; background-size: cover; background-repeat: no-repeat; height: 890px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 style="margin-top: 120px; font-size: 80px;">Hello, I'm Temitope!</h1>
+            <p><h3 style="margin-bottom: 200px; font-size: 35px;"> A Front-End Developer & UI/UX Designer.</h3></p>
+            <p>
+              <a class="btn btn-lg btn-circle btn-brand" href="#">Get Started</a>
+              <a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Learn more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="module ndsection">
+      <div class="container">
+        <div class="row">
+          <div class="m-auto text-center">
+            <h1>About me</h1>      
+            <br>
+            <hr> 
+             <br>
+            <p class="lead">
+            Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+          </div>
+        </div>
+        <div class="row about-box">
+          <div class="col-md-6 post-item" ">
+            <p>
+              Bluetooth Speaker
+              See how your users experience your website in realtime or view trends to see any changes in performance over time.
+            </p>
+          </div>
+          <div class="col-md-6 post-item"">
+            <br>
+            <p>
+              Bluetooth Speaker
+              See how your users experience your website in realtime or view trends to see any changes in performance over time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script type="text/javascript" src="../js/index.js"></script>
     <script
