@@ -24,16 +24,29 @@ section {
   display: block;
 }
 
-header.container-fluid {
-  position: fixed;
+input label {
+  overflow: hidden;
 }
+
+.header {
+  position: fixed;
+  height: 74px;
+  width: 100%;
+  transition: height 0.3s ease-out, background 0.3s ease-out,
+    box-shadow 0.3s ease-out;
+  transform: translate3d(0, 0, 0);
+  z-index: 1040;
+}
+
+/* header.container-fluid {
+  position: fixed;
+} */
 
 body {
   margin: 0;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -47,9 +60,8 @@ body {
 
 .container {
   width: 100%;
-
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -100,11 +112,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0 50px 0 50px;
-}
-
-.navbar-expand {
+  justify-content: space-around;
+  padding: 0 10px 0 10px;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
 }
@@ -114,18 +123,14 @@ a {
   background-color: transparent;
 }
 
-.flex-row {
-  -ms-flex-direction: row !important;
-  flex-direction: row !important;
-}
-
 .navbar-nav {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 0;
   list-style: none;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -135,11 +140,6 @@ a {
   color: yellow;
   font-size: 20px;
   margin-right: 60px;
-  border-radius: 20px;
-}
-
-.nav-link {
-  padding: 0.5rem 1rem;
 }
 
 .nav2 button {
@@ -151,11 +151,9 @@ a {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
-  border-radius: 65px;
-  margin: 0px 0px;
+  border-radius: 55px;
   font-stretch: expanded;
   cursor: pointer;
-  overflow: hidden;
 }
 
 .nav3border li {
@@ -586,7 +584,7 @@ ul {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
+  /* padding-inline-start: 40px; */
 }
 
 ol ol,
@@ -716,7 +714,33 @@ img {
   max-width: 100%;
 }
 
-/* mobile */
+/* mobile 
+
+
+
+*/
+@media (max-width: 991.98px) {
+  .wrapper {
+    padding-top: px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .module-cover,
+  .module-cover.fullscreen {
+    min-height: auto;
+    height: auto;
+    padding: 120px 0 120px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .module-cover,
+  .module-cover-slides {
+    font-size: 10px;
+  }
+}
+
 @media (min-width: 768px) {
   .col-md-12 {
     -ms-flex: 0 0 100%;
@@ -758,7 +782,7 @@ img {
     font-size: 13px;
   }
 
-  ul.navbar-nav {
+  /* ul.navbar-nav {
     position: absolute;
     width: 100%;
     height: 25vh;
@@ -772,7 +796,7 @@ img {
     font-size: 15px;
     transition: all 0.5s;
     overflow: hidden;
-  }
+  } */
   ul.navbar-nav li {
     font-size: 30px;
   }
@@ -813,21 +837,16 @@ img {
     padding: 120px 0 120px;
     overflow: hidden;
   }
+}
 
-  @media (max-width: 708px) {
-    .module-cover,
-    .module-cover.fullscreen {
-      min-height: auto;
-      height: auto;
-      padding: 120px 0 120px;
-      overflow: hidden;
-    }
+@media (max-width: 708px) {
+  .module-cover,
+  .module-cover.fullscreen {
+    min-height: auto;
+    height: auto;
+    padding: 120px 0 120px;
+    overflow: hidden;
   }
-
-  /* @media (max-width: 991.98px) {
-  .bd-navbar {
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
 }
 
 @media (min-width: 768px) {
@@ -837,13 +856,4 @@ img {
     top: 0;
     z-index: 1071;
   }
-}
-
-@media (min-width: 768px) {
-  .flex-md-row {
-    -ms-flex-direction: row !important;
-    flex-direction: row !important;
-  }
-}
-} */
 }
