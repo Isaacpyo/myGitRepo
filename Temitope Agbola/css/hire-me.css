@@ -16,6 +16,10 @@ body {
 }
 
 .login-in {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(../images/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 300px;
   position: absolute;
   top: 50%;
