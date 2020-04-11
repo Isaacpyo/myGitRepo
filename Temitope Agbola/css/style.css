@@ -60,7 +60,6 @@ body {
 
 .container {
   width: 100%;
-  padding-right: 0px;
   padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
@@ -1066,6 +1065,66 @@ img {
 
 */
 
+@media (max-width: 1199px) {
+  .post-item {
+    margin: 5px;
+    padding: 15px 50px;
+    margin: 50px 50px 50px 50px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+
+  .vl {
+    border-left: 0px solid #000000;
+    height: 400px;
+    margin-left: -3px;
+  }
+
+  .row222 {
+    display: block;
+
+    /* flex-wrap: wrap; */
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+  }
+
+  .boxnew-content img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+
+  .row222 {
+    display: block;
+
+    /* flex-wrap: wrap; */
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+  }
+
+  .boxnew-content img {
+    height: 200px;
+  }
+
+  .post-item {
+    margin: 5px;
+    padding: 15px 50px;
+    margin: 50px 50px 50px 50px;
+    border-radius: 10px;
+  }
+}
+
 @media (max-width: 576px) {
   .container {
     max-width: 570px;
@@ -1134,11 +1193,13 @@ img {
 
   .about-box {
     font-size: 15px;
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .post-item {
-    margin: 50px 10px 10px 150px;
+    margin: 50px 120px 10px 120px;
+    justify-content: center;
+    padding: 15px 20px;
   }
 
   .logoeffect {
@@ -1165,9 +1226,9 @@ img {
   .is-middle2 {
     text-align: center !important;
   }
+
   .boxnew-content {
-    height: 100px;
-    width: 15px;
+    height: 150px;
   }
 
   .vl {
@@ -1191,7 +1252,7 @@ img {
   }
 
   .boxnew-content img {
-    padding-left: 90px;
+    justify-content: center;
   }
 
   .level-item h1 {
@@ -1205,21 +1266,23 @@ img {
   .boxnew .boxnew-inside .h4 {
     font-size: 1px;
   }
-}
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 992px;
+  .row222 {
+    display: block;
+
+    /* flex-wrap: wrap; */
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
   }
 
-  .boxnew-content img {
-    height: 200px;
+  .align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
   }
-}
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1198px;
+  .boxnew-inside {
+    margin-bottom: -50px;
   }
 }
 
