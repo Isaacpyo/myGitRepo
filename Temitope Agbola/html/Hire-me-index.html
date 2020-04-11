@@ -2,24 +2,95 @@
   <head>
     <meta charset="UTF-8" />
     <link
-      href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Lato|Open+Sans|Ubuntu&display=swap"
-      rel="stylesheet"
+      rel="shortcut icon"
+      type="image/png"
+      href="../images/vector/profile.png"
     />
     <script
       src="https://kit.fontawesome.com/c74a903629.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../css/hire-me.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hire me login form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Lato|Open+Sans|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/hire-me.css" />
+    <link rel="Stylesheet" href="../css/hire-style.css" />
+
+    <title>Temitope Agbola | Contact</title>
   </head>
   <body>
-    <div class="login-in fineborder">
+    <header class="container">
+      <div class="navbar fixed-top">
+        <a href="www.temitopeagbola.com">
+          <img
+            class="logoeffect"
+            src="../images/vector/default-monochrome.svg"
+            height="200"
+            width="200"
+          />
+        </a>
+        <div class="collapse navbar-collapse" id="navcollapse">
+          <ul class="navbar-nav">
+            <li>
+              <i class="fas fa-home" style="color: yellow;"></i>
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li>
+              <i class="fas fa-address-card" style="color: yellow;"></i>
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <i class="fas fa-project-diagram" style="color: yellow;"></i>
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                data-target="dropdowntarget"
+                href="#"
+                >Porfolio
+                <span class="caret"></span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-md-right"
+                aria-labelledby="dropdowntarget"
+              >
+                <a class="dropdown-item" href="#">Projects</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Developer Tools</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <ul>
+          <li class="nav2">
+            <a href="Hire-me-index.html"><button>Hire Temitope</button></a>
+          </li>
+        </ul>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navcollapse"
+        >
+          <span class="fas fa-bars" style="color: yellow;"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="login-in fineborder text-center">
       <img
         class="logo2"
         src="../images/vector/default-monochrome.svg"
         alt="logo"
-        style="margin: 0;"
+        style="margin: 0; height: 30px; padding-bottom: 2px;"
       />
       <h1>Let's discuss your ideas</h1>
       <div class="text-box">
@@ -34,10 +105,31 @@
 
       <div class="text-box">
         <i class="fas fa-lightbulb"></i>
-        <input type="Message" placeholder="Message" name="" value="" />
+        <br />
+        <textarea
+          name="Message"
+          id=""
+          cols="18"
+          rows="4"
+          placeholder="Message"
+        ></textarea>
       </div>
 
       <input class="buttonme" type="button" name="" value="Submit" />
     </div>
+
+    <!-- javascript lines-->
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

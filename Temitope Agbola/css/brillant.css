@@ -103,7 +103,7 @@ body {
 .row222 {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
+  /* -ms-flex-wrap: wrap; */
   /* flex-wrap: wrap; */
   margin-right: 10px;
   margin-left: 10px;
@@ -242,7 +242,7 @@ a {
   background-repeat: no-repeat;
   background-color: #fff;
   background-size: cover;
-  padding: 30px 0 10px 10px;
+  padding: 10px 0 10px 10px;
 }
 
 .fullscreen .container > .row,
@@ -381,7 +381,7 @@ h3 {
 
 .brillanteffect h2 {
   font-size: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   font-weight: 600;
 }
 
@@ -392,7 +392,7 @@ h3 {
 }
 
 .boxnew {
-  padding: 20px;
+  padding: 0 20px;
   padding-bottom: 0;
 }
 
