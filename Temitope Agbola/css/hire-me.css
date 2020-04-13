@@ -29,6 +29,136 @@ body {
   margin-top: 70px;
 }
 
+.navbar {
+  background-color: #191350;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.navbar-nav button {
+  padding: 6px 9px;
+  background-color: yellow;
+  border: 10px yellow;
+  color: rgb(38, 18, 59);
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  font-stretch: expanded;
+  cursor: pointer;
+}
+
+.navbar-nav button:hover {
+  background-color: #1b1c3f;
+  color: #fffb00;
+  border: 2px yellow solid;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+}
+
+.navbar-toggler button {
+  float: left;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(255, 251, 0, 1);
+  color: #fffb00;
+  border-color: rgba(229, 255, 0, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  color: yellow;
+}
+
+.navbar .navbar-nav {
+  /* padding-left: 150px; */
+
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.navbar-nav a {
+  /* padding-left: 150px; */
+  align-content: center;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.navbar-brand {
+  padding-left: 50px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.525rem 0 0;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 3.15rem;
+  padding-left: 0.15rem;
+  font-weight: 700;
+}
+
+.icons-nav {
+  display: flex;
+}
+
+.icons-nav2 {
+  padding-right: 10px;
+  padding-top: 12px;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #0044ff;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 .login-in .fineborder {
   overflow: hidden;
 }
@@ -89,4 +219,91 @@ body {
   padding: 6px;
   margin: 12px 0;
   transition: ease-in-out 0.4s;
+}
+
+@media (max-width: 1199px) {
+  .navbar-nav {
+    padding-left: 150px;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 2.15rem;
+    padding-left: 0.15rem;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .post-item {
+    margin: 5px;
+    padding: 15px 50px;
+    margin: 50px 50px 50px 50px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1010px) {
+  .navbar-nav {
+    padding-left: 120px;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 2.15rem;
+    padding-left: 0.15rem;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .navbar .navbar-nav {
+    /* padding-left: 150px; */
+
+    justify-content: center;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .navbar-nav {
+    padding-left: 200px;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 2.15rem;
+    padding-left: 0.15rem;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar-nav {
+    padding-left: 320px;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 2.15rem;
+    padding-left: 0.15rem;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1009px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 2.15rem;
+    padding-left: 0.15rem;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .navbar-nav {
+    padding-left: 60px;
+  }
+  .navbar .navbar-nav {
+    /* padding-left: 150px; */
+
+    justify-content: center;
+    padding-right: 0px;
+  }
 }
